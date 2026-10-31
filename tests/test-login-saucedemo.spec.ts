@@ -26,7 +26,7 @@ test.describe('TS-1 Test Login Saucedemo', () => {
     await page.locator('#user-name').fill(USERNAME);
 
     // Paso 3: Escribir la clave en el cuadro password
-    await page.locator('#miclave').fill(PASSWORD);
+        await page.locator('#password').fill(PASSWORD);
 
     // Paso 4: Hacer click en el botón Login
     await page.locator('#login-button').click();
