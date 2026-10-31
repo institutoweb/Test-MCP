@@ -1,0 +1,30 @@
+TS-1 - Test Login Saucedemo
+============================
+
+Historia: Test Login Saucedemo
+Proyecto: TestingMCP (TS)
+Sprint: TS Sprint 1
+Estado: Por hacer
+URL: https://institutowebfullstack.atlassian.net/browse/TS-1
+
+Pasos del test:
+1. Ingresá en saucedemo.com
+2. Escribí el usuario standard en el cuadro de texto username
+3. Escribí la clave en el cuadro password
+4. Hacé click en el botón Login
+5. Chequeá que llegaste a la url /inventory.html
+6. Hace un logout desde el menú hamburguesa
+
+PROMPT PARA PEDIR UNA HISTORIA EN JIRA (REUTILIZABLE)
+======================================================
+
+"Creamos una historia en el proyecto de Jira [CLAVE DEL PROYECTO, ej: TS] con:
+- Título: [TÍTULO DE LA HISTORIA]
+- Descripción: [PASOS O DETALLE DE LA HISTORIA]
+
+Después:
+1. Generá el test de Playwright correspondiente a la historia en la carpeta tests/, siguiendo los pasos de su descripción.
+2. Ejecutalo con: npx playwright test tests/<nombre-del-test>.spec.ts --project=chromium
+3. Si el test da resultado OK (1 passed), actualizá la historia en Jira y movela al estado 'Listo'."
+
+Ejemplo de uso: "Creá la historia 'Test Login Saucedemo' con los pasos de arriba, genera el test en Playwright, probalo y si da OK movela a Listo."
